@@ -35,4 +35,29 @@ return [
         ],
     ],
 
+    'google' => [
+        'client_id' => env('GOOGLE_CLIENT_ID'),
+        'client_secret' => env('GOOGLE_CLIENT_SECRET'),
+        'refresh_token' => env('GOOGLE_REFRESH_TOKEN'),
+        'redirect' => env('GOOGLE_REDIRECT_URI'),
+    ],
+
+    'gemini' => [
+        'key' => env('GEMINI_API_KEY'),
+    ],
+
+    'admin' => [
+        'name' => env('APP_ADMIN_NAME', 'Default Admin'),
+        'email' => env('APP_ADMIN_EMAIL'),
+        'password' => env('APP_ADMIN_PASSWORD'),
+    ],
+
+    'user' => [
+        'password' => env('APP_USER_PASSWORD'),
+    ],
+
+    'system_user' => [
+        'password' => env('APP_SYSTEM_USER_PASSWORD'),
+    ],
+
 ];
